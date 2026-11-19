@@ -21,6 +21,7 @@ def lire_notes(chemin):
         return [(float(l["note"]), float(l["coefficient"])) for l in lecteur]
 
 
+
 def mention(moyenne):
     """Renvoie la mention correspondant à une moyenne sur 20."""
     if moyenne >= 16:
@@ -50,4 +51,5 @@ def tableau_html(lignes):
 
 if __name__ == "__main__":
     notes = lire_notes("donnees/notes.csv")
-    print("Moyenne :", moyenne_ponderee(notes))
+   """ print("Moyenne :", moyenne_ponderee(notes))"""
+   print("afficher la moyenne")
